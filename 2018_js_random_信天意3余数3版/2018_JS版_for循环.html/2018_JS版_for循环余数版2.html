@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+
+
+
+<center>
+
+<body>
+
+
+<h1 style=color:#FF0000>JS_大乐透for循环_余数版</>
+
+
+
+<h1 style=color:#FF0000>2017
+_JS循环余数版_ 跨平台</>
+
+
+
+
+
+<p>大乐透前区单击按钮将代码块循环执行5次。</p>
+<button onclick="myFunction()">点我</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x="",i;
+	for (i=0;i<6;i++){
+		x=x+Math.random()*35+1 + i + "<br>";
+	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+
+
+<p>大乐透后区单击按钮将代码块循环执行2次。</p>
+<button onclick="myFunction2()">点我</button>
+<p id="demo2"></p>
+<script>
+function myFunction2(){
+	var x="",i;
+	for (i=0;i<3;i++){
+		x=x+Math.random()*12+1 + i + "<br>";
+	}
+	document.getElementById("demo2").innerHTML=x;
+}
+</script>
+
+
+
+<h1 style=color:#FF0000>四舍五入</>
+
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<p>点击下面的按钮来显示今天是周几：</p>
+<button onclick="myFunction9()">点击这里</button>
+<p id="demo9"></p>
+<script>
+function myFunction9(){
+	var x;
+	var d=new Date().getDay();
+	switch (d){
+  		case 0:x="今天是星期日";
+    	break;
+ 		case 1:x="今天是星期一";
+        break;
+  		case 2:x="今天是星期二";
+        break;
+        case 3:x="今天是星期三";
+   	 	break;
+  		case 4:x="今天是星期四";
+    	break;
+  		case 5:x="今天是星期五";
+        break;
+  		case 6:x="今天是星期六";
+    	break;
+ 	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+</body>
+</html>
